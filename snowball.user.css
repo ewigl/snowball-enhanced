@@ -1,0 +1,49 @@
+/* ==UserStyle==
+@name         Snowball Enhanced
+@namespace    https://github.com/ewigl/snowball-enhanced
+@description  雪球首页内容加宽，显示被省略的股票、基金全称。固定右侧边栏。适用 4K 屏幕 150% 缩放，未在其他分辨率下进行测试。
+@author       Licht
+@homepageURL  https://github.com/ewigl/snowball-enhanced
+@preprocessor stylus
+@version      0.1
+@license      MIT
+==/UserStyle== */
+
+/* 整体宽度 +500 */
+.user__container {
+  width: 1650px;
+}
+/* 中部宽度 +500 */
+.user__col--middle {
+  width: 1180px;
+}
+/* 指数栏位整体宽度 重置 */
+.home__stock-index__box {
+  width: unset;
+}
+/* 右侧边栏 固定位置 */
+.home__aside--sticky {
+  position: relative !important;
+  left: 0px !important;
+}
+/* 表格内股票、基金名称完整显示 */
+.optional__tb td .name {
+  overflow: visible;
+  max-width: 250px;
+}
+/* 搜索页面表格宽度*/
+.search__portfilio__bd tr td:first-child,
+.search__portfilio__bd tr th:first-child,
+.search__stock__bd tr td:first-child,
+.search__stock__bd tr th:first-child {
+  width: 360px;
+}
+/* 搜索页面容器宽度*/
+.search__container {
+  width: 1140px;
+}
+/* 搜索页面表格内名称完整显示 */
+.search__portfilio__bd tr td:first-child span,
+.search__stock__bd tr td:first-child span {
+  overflow: visible;
+}
