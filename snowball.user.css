@@ -48,4 +48,8 @@
   .search__stock__bd tr td:first-child span {
     overflow: visible;
   }
+  /* 7x24 信息流宽度扩展 */
+  .home__timeline-live__tb a {
+    width: unset;
+  }
 }
