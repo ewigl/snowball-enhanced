@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         Snowball Enhanced
 @namespace    https://github.com/ewigl/snowball-enhanced
-@description  雪球首页内容加宽，显示被省略的股票、基金全称。固定右侧边栏。适用 4K 屏幕 150% 缩放，未在其他分辨率下进行测试。
+@description  雪球首页内容加宽，显示被省略的股票、基金全称。固定右侧边栏。
 @author       Licht
 @homepageURL  https://github.com/ewigl/snowball-enhanced
 @preprocessor stylus
@@ -51,5 +51,13 @@
   /* 7x24 信息流宽度扩展 */
   .home__timeline-live__tb a {
     width: unset;
+  }
+  /* 文章页面宽度 */
+  .article__page {
+    width: 1650px;
+  }
+  /* 文章内容宽度 */
+  .article__container {
+    width: 1180px;
   }
 }
